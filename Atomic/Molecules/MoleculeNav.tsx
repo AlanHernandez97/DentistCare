@@ -1,10 +1,13 @@
-import Link from "next/link"
+'use client'
 import DentistLogo from "../Atoms/DentistLogo"
 import LinkButton from '../Atoms/LinkButton';
 import PathLink from "../Atoms/PathLink";
+import { usePathname } from "next/navigation";
 
 
 function MoleculeNav() {
+
+
 
 
 	const navItems = [
