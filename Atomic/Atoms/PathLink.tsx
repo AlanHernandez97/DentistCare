@@ -9,7 +9,6 @@ type PathLinkProps = {
 
 export default function PathLink({ path, text }: PathLinkProps) {
 	const pathname = usePathname()
-	console.log(pathname)
 	return (
 		<Link className={`hover:underline ${(pathname === path) && 'font-extrabold'}`} href={path}>{text}</Link>
 	)

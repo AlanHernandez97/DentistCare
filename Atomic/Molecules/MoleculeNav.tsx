@@ -1,8 +1,6 @@
-'use client'
 import DentistLogo from "../Atoms/DentistLogo"
 import LinkButton from '../Atoms/LinkButton';
 import PathLink from "../Atoms/PathLink";
-import { usePathname } from "next/navigation";
 
 
 function MoleculeNav() {
@@ -30,13 +28,13 @@ function MoleculeNav() {
 	]
 
 	return (
-		<nav className='flex justify-between p-8 bg-[#299FF4] text-white items-center'>
+		<nav className='flex justify-between gap-10 p-10 bg-[#299FF4] text-white items-center'>
 			<DentistLogo />
 			<div className='flex gap-20 items-center'>
 				{
 					navItems.map(item => (
 
-						<PathLink path={item.path} text={item.text} />
+						<PathLink key={null} path={item.path} text={item.text} />
 
 					))
 				}
