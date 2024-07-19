@@ -30,7 +30,7 @@ function MoleculeNav() {
 	return (
 		<nav className='flex justify-between gap-10 p-10 bg-[#299FF4] text-white items-center'>
 			<DentistLogo />
-			<div className='flex gap-20 items-center'>
+			<div className='flex mr-20 gap-20 items-center'>
 				{
 					navItems.map(item => (
 

@@ -1,4 +1,4 @@
-import Head from "@/src/Organisms/head/Head";
+import Head from "@/src/components/Organisms/head/Head";
 
 export default function Home() {
   return (
