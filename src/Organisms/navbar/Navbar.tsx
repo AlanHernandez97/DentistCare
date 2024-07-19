@@ -1,4 +1,4 @@
-import MoleculeNav from '@/Atomic/Molecules/MoleculeNav'
+import MoleculeNav from '@/src/Molecules/MoleculeNav'
 import React from 'react'
 
 function Navbar() {
