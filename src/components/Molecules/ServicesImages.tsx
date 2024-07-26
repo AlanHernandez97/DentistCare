@@ -25,7 +25,7 @@ export default function ServicesImages() {
 		}
 	]
 	return (
-		<div className="mt-32 flex items-center justify-around">
+		<div className="flex flex-wrap gap-10 items-center justify-around">
 			{
 				servicesData.map(service => (
 					<div key={null} className="flex flex-col gap-6 items-center">
