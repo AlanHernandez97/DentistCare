@@ -20,10 +20,6 @@ function MoleculeNav({ path }: LinkProps) {
 			text: 'Inicio'
 		},
 		{
-			path: '/pricing',
-			text: 'Precios'
-		},
-		{
 			path: '/about',
 			text: 'Nosotros'
 		},
@@ -35,7 +31,9 @@ function MoleculeNav({ path }: LinkProps) {
 
 	return (
 		<nav className='w-auto flex justify-around gap-10 py-10 px-4 bg-[#299FF4] text-white items-center xl:justify-between'>
-			<DentistLogo />
+			<div className="px-3">
+				<DentistLogo />
+			</div>
 			<div className='flex mr-10 gap-20 items-center'>
 				{
 					navItems.map(item => (
