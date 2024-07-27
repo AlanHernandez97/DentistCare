@@ -1,28 +1,29 @@
 import React from 'react'
 import LinkButton from '../../Atoms/LinkButton'
+import DentistImages from '../../Atoms/DentistImages';
 
 export default function TalentTeam() {
 
-	const steps = [
+	const teams = [
 		{
-			step: '01',
-			img: './Phone.svg',
-			text: "Llamanos y agenda tu cita"
+			name: 'Alan López',
+			img: '/Team/AlanE.jpg',
+			ocupation: "Ortodoncista"
 		},
 		{
-			step: '02',
-			img: './CustomerService.svg',
-			text: "Te confirmaremos tu cita"
+			name: 'Eduardo Ramírez',
+			img: '/Team/EduardoR.jpg',
+			ocupation: "Protodoncista"
 		},
 		{
-			step: '03',
-			img: './Map.svg',
-			text: "Llega a nuestra clínica clínica"
+			name: 'Carlos Utrilla',
+			img: '/Team/CarlosU.jpg',
+			ocupation: "Maxiolofacial"
 		},
 		{
-			step: '04',
-			img: './DentalCare.svg',
-			text: "Te daremos el mejor servicio"
+			name: 'Regina Ayala',
+			img: '/Team/ReginaA.jpg',
+			ocupation: "Enfermera Desntista"
 		}
 
 	]
@@ -30,37 +31,31 @@ export default function TalentTeam() {
 
 	return (
 		<div className='w-full flex flex-col gap-4 justify-center'>
-			<div className='w-auto px-12 flex flex-wrap justify-between items-start'>
-				<div className='w-full flex flex-col items-center gap-10 xl:w-1/2'>
-					<h3 className='text-4xl font-bold'>Sencillos pasos para realizar una reserva online</h3>
-					<span className="text-lg text-[#B1B1C6] w-full">
-						Nuestros clientes son nuestra prioridad, le ofrecemos servicio dental de calidad con un equipo de especialistas.
-						Más detalles de nuestros servicios a continuación.
-					</span>
-					<div className="flex justify-center items-center text-white">
-						<LinkButton
-							path='#'
-							text={'Agendar'}
-						/>
-					</div>
-				</div>
-				<div className='w-auto flex flex-wrap items-center justify-center gap-12 py-10 xl:w-1/2 xl:py-0'>
+			<div className='px-5'>
+				<h3 className='w-full text-4xl font-bold text-center'>Conoce a nuesto equipo de trabajo</h3>
+				<div className='w-full flex flex-wrap justify-evenly py-10'>
 					{
-						steps.map(step => (
-							<div className='flex items-start'>
-								<h3 className='text-4xl font-bold'>{step.step}</h3>
-								<div className='flex flex-col flex-wrap gap-6 items-center'>
-									<img className='w-auto' src={step.img} alt="StepImage" />
-									<span className="text-lg text-[#B1B1C6]">
-										{step.text}
-									</span>
-
+						teams.map(team => (
+							<div className='w-auto flex flex-col flex-wrap gap-5 items-center'>
+								<div>
+									<DentistImages
+										src={team.img}
+										width={300}
+										height={1}
+									/>
+								</div>
+								<div className='pb-10'>
+									<p className='text-xl font-bold'>
+										{team.name}
+									</p>
+									<span>{team.ocupation}</span>
 								</div>
 							</div>
 						))
+
 					}
 				</div>
-			</div>
-		</div>
+			</div >
+		</div >
 	)
 }
