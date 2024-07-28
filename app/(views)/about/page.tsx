@@ -1,6 +1,7 @@
 import TalentTeam from '@/src/components/Organisms/team/TalentTeam'
 import type { Metadata } from 'next'
 import DentistImages from '../../../src/components/Atoms/DentistImages';
+import LinkButton from '../../../src/components/Atoms/LinkButton';
 
 export const metadata: Metadata = {
 	title: 'Acerca de',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
 	return (
 		<div>
-			<section className='py-5'>
+			<section className='w-full flex flex-col py-5'>
 				<h3 className='w-full text-4xl text-center font-bold'>Conoce nuestra historia</h3>
 				<div className='w-auto flex flex-wrap justify-around items-center py-10 gap-8'>
 					<div className='w-auto py-5'>
@@ -28,6 +29,12 @@ export default function AboutPage() {
 							agendar su cita desde la página llenando el formulario de registro
 						</span>
 					</div>
+				</div>
+				<div className='text-white flex justify-center'>
+					<LinkButton
+						path='#'
+						text='Agendar'
+					/>
 				</div>
 			</section>
 			<TalentTeam />
