@@ -12,7 +12,7 @@ export default function ContactForm() {
 						Comprometidos en conducir su salud bucal de acuerdo con los más altos principios de honestidad y equidad.
 					</span>
 				</div>
-				<form className='w-full h-fit flex flex-col flex-wrap gap-10 justify-center bg-[#F8F8F8] shadow-2xl shadow-black px-10 py-7 rounded-md xl:w-2/5'>
+				<form className='w-full h-fit flex flex-col flex-wrap gap-10 justify-center bg-[#F8F8F8] shadow-md shadow-black px-10 py-7 rounded-md xl:w-2/5'>
 					<div className='relative w-auto flex flex-col flex-wrap gap-2 lg:w-4/5'>
 						<label htmlFor="name">Nombre</label>
 						<input

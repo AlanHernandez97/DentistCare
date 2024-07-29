@@ -32,7 +32,7 @@ export default function Steps() {
 		<div className='w-full flex flex-col gap-4 justify-center py-10'>
 			<div className='w-auto px-12 flex flex-wrap justify-between items-start'>
 				<div className='w-full flex flex-col items-center gap-10 xl:w-1/2'>
-					<h3 className='text-4xl font-bold'>Sencillos pasos para agendar online</h3>
+					<h3 className='text-4xl font-bold'>Sencillos pasos para agendar vía telefónica</h3>
 					<span className="text-lg text-[#B1B1C6] w-full">
 						Nuestros clientes son nuestra prioridad, le ofrecemos servicio dental de calidad con un equipo de especialistas.
 						Más detalles de nuestros servicios a continuación.
