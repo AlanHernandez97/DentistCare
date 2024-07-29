@@ -11,9 +11,9 @@ export default function OurServices() {
 	return (
 		<div>
 			<div className=" flex flex-col w-full">
-				<div className="flex items-center w-full my-10 mx-10 gap-7 flex-wrap">
-					<h2 className="text-4xl font-bold">Le brindamos los mejores servicios</h2>
-					<span className="text-lg text-[#B1B1C6] w-full md:w-1/2 2xl:text-center">
+				<div className="flex items-center justify-center w-full my-10 xl:mx-10 gap-7 flex-wrap">
+					<h2 className="text-4xl font-bold  text-center">Le brindamos los mejores servicios</h2>
+					<span className="text-lg text-[#B1B1C6] w-auto md:w-1/2 text-center">
 						Nuestros clientes son nuestra prioridad, le ofrecemos servicio dental de calidad con un equipo de especialistas.
 						Más detalles de nuestros servicios a continuación.
 					</span>

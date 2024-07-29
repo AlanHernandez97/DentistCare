@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`w-full ${inter.className}`}>
-        {/* <NavBarDesktop /> */}
         <Navbar />
         {children}
         <FooterNav />
