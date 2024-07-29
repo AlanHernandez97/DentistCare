@@ -1,7 +1,6 @@
 import ServiceCard from '@/src/components/Atoms/ServiceCard'
 import Steps from '@/src/components/Organisms/steps/Steps'
 import type { Metadata } from 'next'
-import { stringify } from 'querystring';
 
 export const metadata: Metadata = {
 	title: 'Servicios',

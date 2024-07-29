@@ -1,10 +1,10 @@
-import MoleculeNav from '@/src/components/Molecules/MoleculeNav'
 import React from 'react'
+import MobileNavBar from './Mobile/MobileNavBar'
 
-function Navbar() {
+export default function Navbar() {
 	return (
-		<MoleculeNav />
+		<div>
+			<MobileNavBar />
+		</div>
 	)
 }
-
-export default Navbar

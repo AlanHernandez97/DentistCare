@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/src/components/Organisms/navbar/Navbar";
+import NavBarDesktop from "@/src/components/Organisms/navbar/Desktop/NavBarDesktop";
 import FooterNav from "@/src/components/Organisms/footer/FooterNav";
+import Navbar from "@/src/components/Organisms/navbar/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`w-auto ${inter.className}`}>
+      <body className={`w-full ${inter.className}`}>
+        {/* <NavBarDesktop /> */}
         <Navbar />
         {children}
         <FooterNav />
