@@ -53,6 +53,7 @@ export default function ServiceCard() {
 			{
 				DentistServices.map(services => (
 					<div
+						key={services.id}
 						className='w-full h-fit shadow-sm bg-[#F8F8F8] px-5 py-7 rounded-md hover:shadow-2xl hover:shadow-black hover:-translate-y-4 transition ease-in-out duration-500 md:w-96'
 					>
 
@@ -63,15 +64,15 @@ export default function ServiceCard() {
 							<div className="flex justify-between items-center">
 								<div className="flex flex-col">
 									{
-										services.services?.map(service => (
-											<li>{service}</li>
+										services.services?.map((service, idx) => (
+											<li key={idx}>{service}</li>
 										))
 									}
 								</div>
 								<div className="flex flex-col">
 									{
-										services.prices?.map(price => (
-											<span>{price} MXN</span>
+										services.prices?.map((price, index) => (
+											<span key={index}>{price} MXN</span>
 										))
 									}
 								</div>

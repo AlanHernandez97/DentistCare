@@ -35,8 +35,8 @@ export default function TalentTeam() {
 				<h3 className='w-full text-4xl font-bold text-center'>Conoce a nuesto equipo de trabajo</h3>
 				<div className='w-full flex flex-wrap justify-evenly py-10'>
 					{
-						teams.map(team => (
-							<div className='w-auto flex flex-col flex-wrap gap-5 items-center'>
+						teams.map((team, index) => (
+							<div key={index} className='w-auto flex flex-col flex-wrap gap-5 items-center'>
 								<div>
 									<DentistImages
 										src={team.img}
